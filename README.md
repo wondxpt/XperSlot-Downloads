@@ -1,8 +1,14 @@
-# XperSlot — Two Apps. One Connected Booking Experience.
+# XperSlot — Official Customer and Business apps
 
-XperSlot is a service-booking platform built around two dedicated experiences: **XperSlot Customer** for people discovering and booking services, and **XperSlot Business** for the professionals and teams delivering them.
+XperSlot is a service-booking platform with **two separate Android applications**. This repository is the official public product-information and release-status hub. The application source code is maintained separately in a private repository.
 
-This repository is the public product page and intended download hub. The application source repository remains separate and private. The Android APK binaries are not publicly attached yet; the release stays in draft until both uploads and final release checks are completed.
+<p align="center">
+  <a href="https://github.com/wondxpt/Xperslot-Showcase"><img alt="Product overview" src="https://img.shields.io/badge/Product%20Overview-XperSlot-0F766E?style=for-the-badge" /></a>
+  <img alt="App model" src="https://img.shields.io/badge/Apps-Customer%20%2B%20Business-164E63?style=for-the-badge" />
+  <img alt="Launch" src="https://img.shields.io/badge/Public%20APK%20Release-Coming%20Soon-5A55E0?style=for-the-badge" />
+</p>
+
+> **Current product line:** XperSlot Customer and XperSlot Business are the only two apps presented by this project. The earlier single-app/role-switching concept is not the current product and is not offered for download.
 
 ## Choose your app
 
@@ -11,61 +17,66 @@ This repository is the public product page and intended download hub. The applic
 A discovery-to-booking experience for customers.
 
 - Explore service businesses and professionals.
-- Search and browse by business category, with map-based discovery.
-- Review business profiles, portfolios and customer feedback.
+- Search and browse by business category, including map-based discovery.
+- Review business profiles, portfolios, and customer feedback.
 - Book appointments through business booking pages.
 - Keep upcoming and past bookings together.
 - Save favourite businesses and contact providers through in-app messaging.
-- Access a personal profile, wallet, support and customer forms.
+- Access a personal profile, wallet, support, and customer forms where enabled.
 
 ### XperSlot Business
 
 A workspace for service businesses and their teams.
 
 - Set up a business workspace and manage business details.
-- Manage the service catalogue, availability, working hours and booking rules.
-- Work with a business calendar, appointments and waitlists.
-- Organise staff, shifts, time off, resources and commissions.
+- Manage services, availability, working hours, and booking rules.
+- Work with a business calendar, appointments, and waitlists.
+- Organise staff, shifts, time off, resources, and commissions.
 - Maintain client records and communicate with customers.
-- Track payments, checkout/POS, inventory and store orders.
-- Manage reviews, gift cards, loyalty, discounts and marketing tools.
+- Manage payments, checkout/POS, inventory, and store orders where enabled.
+- Work with reviews, gift cards, loyalty, discounts, and marketing tools.
 - Review business activity and reporting, and manage online presence.
 
-Feature access can vary by account role, workspace configuration and connected services. The apps require the XperSlot backend and account services; an APK alone is not a standalone offline product.
+Feature access can vary by account role, workspace configuration, and connected services. The apps require XperSlot backend and account services; an APK by itself is not a standalone offline product.
 
-## Android preview builds
+## Android app identity
 
-The Android builds listed here are release candidates prepared for a future public preview. They are not downloadable from this repository yet, and their production signing and upgrade path have not been fully validated.
+| App | Android package ID |
+|---|---|
+| XperSlot Customer | `com.reservio.customer` |
+| XperSlot Business | `com.reservio.business` |
 
-| App | App version | Android version code | Minimum Android | Package ID |
-|---|---:|---:|---:|---|
-| Customer | 2.1 | 13 | Android 7.0 (API 24) | com.reservio.customer |
-| Business | 2.9.4 | 27 | Android 7.0 (API 24) | com.reservio.business |
+The package identifiers are retained technical IDs for application continuity. The user-facing launcher labels identify the two apps as **XperSlot Customer** and **XperSlot Business**.
 
-The legacy Android package identifiers are intentionally retained in these builds. The launcher labels identify the apps as **Xperslot Customer** and **Xperslot Business**.
+## Download availability
 
-> **Download status (10 November 2026):** The APK binaries are not attached to a public release yet. This repository currently provides the product overview and technical release information only. Please do not treat this page or the draft release as a download link until both APK files are visible in the public Releases section.
+**There is currently no published XperSlot APK release in this repository.** The incomplete draft release has been removed. This page is the official status page, not an APK download link.
 
-## Installation and upgrade notes (for the future public APK release)
+A public release will be created only when:
+- Both current APK files are attached and GitHub confirms each upload is complete.
+- Package IDs, app labels, version names, version codes, and minimum Android requirements match the actual files.
+- SHA-256 checksums are published and verified against the downloadable binaries.
+- The signing certificate and in-place upgrade path are checked against previously distributed installations.
+- Fresh installation and update behavior are smoke-tested on physical Android devices.
+- Core sign-in, customer booking, business calendar, and backend-connected workflows are validated.
 
-1. Download only the APK for your intended app: Customer or Business.
-2. Open the downloaded APK on an Android device and follow Android's installation prompt.
-3. Sign in or create an account, then use the app with a supported network connection.
+Until then, do not install unofficial mirrors or use an old single-app build as a substitute for either current app.
 
-These preview APKs are signed and their APK Signature Scheme v2 signatures verify. However, the release signing key has not yet been confirmed against every previously distributed production build. Existing debug-signed test installations may reject an in-place update. **Do not uninstall an existing installation just to try this preview**: uninstalling can remove local app data. Wait for a signing-key and upgrade-path confirmation first.
+## Installation and upgrade safety
 
-## Integrity and security details
+When the public release is available, use only the APK links in the published GitHub Release and follow its version-specific instructions.
 
-- Both APKs pass Android APK Signature Scheme v2 verification.
-- Both variants are configured as non-debuggable release builds.
-- Android app backup is disabled, with backup and device-transfer exclusions.
-- Cleartext HTTP traffic is disabled in the Android manifest.
-- The certificate SHA-256 fingerprint for these preview builds is:
+Do not uninstall an existing XperSlot installation merely to test a candidate build. Android may reject an update signed with a different certificate, and uninstalling can remove local app data. Wait for the release notes to explicitly confirm the supported update path.
 
-  5E40400F42768141989602625D157D91C22D0031253D4A766DF2264982874DA2
+## Integrity and security
 
-A verified APK signature establishes package integrity and signer identity; it does not by itself prove backend availability, account-flow correctness or compatibility with every previously installed build. Production rollout and end-to-end validation remain separate release gates.
+A valid Android APK signature helps establish the identity of the signer and detect file modification. It does not by itself prove backend availability, account-flow correctness, booking integrity, or compatibility with an older installation. Those checks are handled separately before release.
+
+For security concerns, see [SECURITY.md](SECURITY.md). For installation or product support, see [SUPPORT.md](SUPPORT.md).
 
 ## Feedback
 
-Please use the repository's [Issues](https://github.com/wondxpt/XperSlot-Downloads/issues) for reproducible download or installation problems. Do not include passwords, access tokens, personal data or private account information in an issue.
+Use [GitHub Issues](https://github.com/wondxpt/XperSlot-Downloads/issues) for reproducible product or release problems and focused feature requests. Do not include passwords, access tokens, personal data, private messages, payment details, or unredacted logs.
+
+- [Product overview and architecture](https://github.com/wondxpt/Xperslot-Showcase)
+- [Published releases](https://github.com/wondxpt/XperSlot-Downloads/releases)
