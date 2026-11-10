@@ -1,0 +1,34 @@
+name: XperSlot feature request
+description: Suggest a focused improvement to the Customer or Business app.
+title: "feature: "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - XperSlot Customer
+        - XperSlot Business
+        - Both apps
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What user problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and context
+    validations:
+      required: false
