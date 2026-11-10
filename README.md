@@ -44,9 +44,9 @@ The current public Android package is a **preview / release-candidate build**, n
 
 The legacy Android package identifiers are intentionally retained in these builds. The launcher labels identify the apps as **Xperslot Customer** and **Xperslot Business**.
 
-**Get the APKs:** open the [Android preview release](https://github.com/wondxpt/XperSlot-Downloads/releases/tag/android-preview-2026.11.10) and download the APK for the audience you belong to.
+> **Download status (10 November 2026):** The APK binaries are not attached to a public release yet. This repository currently provides the product overview and technical release information only. Please do not treat this page or the draft release as a download link until both APK files are visible in the public Releases section.
 
-## Installation and upgrade notes
+## Installation and upgrade notes (for the future public APK release)
 
 1. Download only the APK for your intended app: Customer or Business.
 2. Open the downloaded APK on an Android device and follow Android's installation prompt.
