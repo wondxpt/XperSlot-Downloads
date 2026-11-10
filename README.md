@@ -2,7 +2,7 @@
 
 XperSlot is a service-booking platform built around two dedicated experiences: **XperSlot Customer** for people discovering and booking services, and **XperSlot Business** for the professionals and teams delivering them.
 
-This repository is the public download hub. The application source repository remains separate and private.
+This repository is the public product page and intended download hub. The application source repository remains separate and private. The Android APK binaries are not publicly attached yet; the release stays in draft until both uploads and final release checks are completed.
 
 ## Choose your app
 
@@ -35,7 +35,7 @@ Feature access can vary by account role, workspace configuration and connected s
 
 ## Android preview builds
 
-The current public Android package is a **preview / release-candidate build**, not a declaration that every production rollout and store-signing prerequisite has been completed.
+The Android builds listed here are release candidates prepared for a future public preview. They are not downloadable from this repository yet, and their production signing and upgrade path have not been fully validated.
 
 | App | App version | Android version code | Minimum Android | Package ID |
 |---|---:|---:|---:|---|
