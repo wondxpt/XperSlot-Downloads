@@ -27,7 +27,7 @@ The exact release APKs were found in the primary workspace and checked against A
 | APK Signature Scheme v2 | Pass | Pass |
 | SHA-256 | `0B035AA389129CF10B7E69B82F5DA615C332E7293C94EA7012778ECE801F67D3` | `1FA233ADF7B7946736261B86BDABC27A95B4F43228E9480199972F8A60FA38E0` |
 
-Both files use release certificate SHA-256:
+The [SHA-256 checksum manifest](SHA256SUMS.txt) is committed in this repository. Both files use release certificate SHA-256:
 
 ```text
 5E40400F42768141989602625D157D91C22D0031253D4A766DF2264982874DA2
