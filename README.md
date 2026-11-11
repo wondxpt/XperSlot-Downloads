@@ -67,13 +67,9 @@ Download and verify the [SHA-256 checksum file](SHA256SUMS.txt) after obtaining 
 
 ## Important installation and upgrade warning
 
-This is intended as the **first public distribution** of XperSlot Customer and XperSlot Business. No earlier public customer installations are being migrated. Some non-public developer test installations were signed with a different certificate:
+This is the **first public distribution** of XperSlot Customer and XperSlot Business; there are no earlier public customer installations to migrate. Both public APKs use the same release signing certificate. Future public updates should retain this signing identity and use increasing version codes.
 
-```text
-C2A0EFC0A7A9FB4F8145AE9A4EFF0C0F68386B88D5706F523CF18AA47C95320F
-```
-
-Android will reject an in-place update when the installed app and candidate APK have different signing certificates. The different signer affects only those earlier private test installations; Android will reject an in-place update from them. For this first public distribution, use a clean installation. **Do not uninstall a private test installation to force an update**; keep it separate until a migration path is deliberately tested.
+Private developer test builds were signed with a different certificate and are not supported upgrade targets. Keep those internal test installations separate; this note does not affect new public users installing XperSlot for the first time.
 
 ## What must be completed before public download
 
