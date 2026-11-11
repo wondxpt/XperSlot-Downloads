@@ -9,8 +9,8 @@
 
 | App | Version | Version code | Android package ID | Minimum Android |
 |---|---:|---:|---|---:|
-| XperSlot Customer | 2.1 | 13 | `com.reservio.customer` | API 24 |
-| XperSlot Business | 2.9.4 | 27 | `com.reservio.business` | API 24 |
+| XperSlot Customer | 2.1.1 | 14 | `com.reservio.customer` | API 24 |
+| XperSlot Business | 2.9.5 | 28 | `com.reservio.business` | API 24 |
 
 The package identifiers are retained technical IDs. The current product is the separate Customer and Business apps; the former single-app/role-switching concept is not the current product.
 
@@ -20,12 +20,12 @@ The exact release APKs were found in the primary workspace and checked against A
 
 | Check | Customer | Business |
 |---|---|---|
-| File | `app-customer-release.apk` | `app-business-release.apk` |
-| Size | 95,590,382 bytes | 95,591,538 bytes |
+| File | `XperSlot-Customer-2.1.1-code14-release-candidate.apk` | `XperSlot-Business-2.9.5-code28-release-candidate.apk` |
+| Size | 95,546,021 bytes | 95,546,309 bytes |
 | Package | `com.reservio.customer` | `com.reservio.business` |
-| Version | 2.1 / code 13 | 2.9.4 / code 27 |
+| Version | 2.1.1 / code 14 | 2.9.5 / code 28 |
 | APK Signature Scheme v2 | Pass | Pass |
-| SHA-256 | `96577FB1161C26217B1309651D97552EA986448F68702E03743D1C7F8D31EA9E` | `80E1047D2D574BA952E7AC6B644596FB4528BAC396D6650B35ACC320F975DAA1` |
+| SHA-256 | `0B035AA389129CF10B7E69B82F5DA615C332E7293C94EA7012778ECE801F67D3` | `1FA233ADF7B7946736261B86BDABC27A95B4F43228E9480199972F8A60FA38E0` |
 
 Both files use release certificate SHA-256:
 
@@ -47,13 +47,13 @@ A prerelease draft was created in this repository:
 
 ## Signing continuity and installation safety
 
-Existing protected test installations use a different signing certificate:
+This is intended as XperSlot's **first public distribution**; no earlier public customer installations are being migrated. Some non-public developer test installations use a different signing certificate:
 
 ```text
 C2A0EFC0A7A9FB4F8145AE9A4EFF0C0F68386B88D5706F523CF18AA47C95320F
 ```
 
-The Android package IDs match, but the signing certificates do not. Android will reject an in-place update from those installed builds to these candidates. The existing apps and their data must not be uninstalled or overwritten as part of this release task.
+The Android package IDs match, but the signing certificates do not. Android will reject an in-place update from those installed builds to these candidates. Those private test installations are not upgrade targets. For the first public distribution, use a clean install; do not uninstall or overwrite a private test installation just to test compatibility.
 
 This is a release candidate for controlled fresh-install evaluation only. No general upgrade compatibility is claimed. Before production distribution, the project must confirm the intended signing key, version-code policy, and supported migration path.
 
@@ -68,7 +68,7 @@ This is a release candidate for controlled fresh-install evaluation only. No gen
 | GitHub asset upload | Both asset states must be `uploaded` and sizes exact | Pending |
 | Public download links | Both assets must be downloadable by an unauthenticated user | Pending |
 | Fresh installation | Install and launch each exact public APK on a clean supported device | Pending |
-| Existing-install upgrade | Must not be claimed; current test signer mismatch is confirmed | Blocked |
+| Existing private-test upgrade | Different signer; not a supported upgrade target | Not applicable to first public distribution |
 | Core workflows | Sign-in, customer booking, business calendar, and backend-connected checks on exact release binaries | Pending |
 | Production approval | Confirm signing key, version-code history, backend readiness, and operational support | Pending |
 
