@@ -39,8 +39,8 @@ Feature availability depends on account permissions, workspace configuration, an
 
 | App | Current release candidate | Version code | Android package ID | Minimum Android |
 |---|---:|---:|---|---:|
-| XperSlot Customer | 2.1 | 13 | `com.reservio.customer` | 7.0 / API 24 |
-| XperSlot Business | 2.9.4 | 27 | `com.reservio.business` | 7.0 / API 24 |
+| XperSlot Customer | 2.1.1 | 14 | `com.reservio.customer` | 7.0 / API 24 |
+| XperSlot Business | 2.9.5 | 28 | `com.reservio.business` | 7.0 / API 24 |
 
 The package IDs are retained technical identifiers. The built APKs use XperSlot-branded launcher labels.
 
@@ -54,8 +54,8 @@ The exact local release-candidate artifacts have been checked:
 
 | Artifact | Size | SHA-256 |
 |---|---:|---|
-| Customer 2.1 (code 13) | 95,590,382 bytes | `96577FB1161C26217B1309651D97552EA986448F68702E03743D1C7F8D31EA9E` |
-| Business 2.9.4 (code 27) | 95,591,538 bytes | `80E1047D2D574BA952E7AC6B644596FB4528BAC396D6650B35ACC320F975DAA1` |
+| Customer 2.1.1 (code 14) | 95,546,021 bytes | `0B035AA389129CF10B7E69B82F5DA615C332E7293C94EA7012778ECE801F67D3` |
+| Business 2.9.5 (code 28) | 95,546,309 bytes | `1FA233ADF7B7946736261B86BDABC27A95B4F43228E9480199972F8A60FA38E0`
 
 Both candidate APKs passed Android APK Signature Scheme v2 verification. The release certificate SHA-256 is:
 
@@ -65,13 +65,13 @@ Both candidate APKs passed Android APK Signature Scheme v2 verification. The rel
 
 ## Important installation and upgrade warning
 
-Some existing test installations were signed with a different certificate:
+This is intended as the **first public distribution** of XperSlot Customer and XperSlot Business. No earlier public customer installations are being migrated. Some non-public developer test installations were signed with a different certificate:
 
 ```text
 C2A0EFC0A7A9FB4F8145AE9A4EFF0C0F68386B88D5706F523CF18AA47C95320F
 ```
 
-Android will reject an in-place update when the installed app and candidate APK have different signing certificates. **Do not uninstall an existing app or attempt an update to these candidates** unless the update path has been validated and any needed data has been backed up. The release candidates are not claimed to be compatible updates for those test installations.
+Android will reject an in-place update when the installed app and candidate APK have different signing certificates. The different signer affects only those earlier private test installations; Android will reject an in-place update from them. For this first public distribution, use a clean installation. **Do not uninstall a private test installation to force an update**; keep it separate until a migration path is deliberately tested.
 
 ## What must be completed before public download
 
