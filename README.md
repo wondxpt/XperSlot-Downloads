@@ -90,6 +90,7 @@ Android will reject an in-place update when the installed app and candidate APK 
 
 A valid APK signature and matching checksum help detect file changes and identify the signer. They do not prove backend availability, account-flow correctness, booking integrity, or end-to-end production readiness.
 
+- [SHA-256 checksum manifest](SHA256SUMS.txt)
 - [Product overview and conceptual architecture](https://github.com/wondxpt/Xperslot-Showcase)
 - [Published releases](https://github.com/wondxpt/XperSlot-Downloads/releases)
 - [Security policy](SECURITY.md)
