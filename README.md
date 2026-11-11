@@ -48,7 +48,7 @@ The package IDs are retained technical identifiers. The built APKs use XperSlot-
 
 ![Release stage](https://img.shields.io/badge/Release-Preview%20validation-5A55E0?style=for-the-badge)
 
-**No public APK download is available yet.** A GitHub prerelease draft exists (tag: `xperslot-android-preview-2026.11.11`), but it currently has no confirmed APK attachments. It remains a draft until both files finish uploading and GitHub reports each asset as complete with the expected byte size. Do not treat a draft page or a listed version number as a downloadable release.
+**No public APK download is available yet.** The Customer 2.1.1 APK is uploaded to the GitHub prerelease draft and GitHub reports the expected full byte size. The Business 2.9.5 APK is still uploading. The draft must remain unpublished until Business is also complete and both assets are independently verified. A draft page is not a public download.
 
 The exact local release-candidate artifacts have been checked:
 
