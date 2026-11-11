@@ -43,7 +43,7 @@ A prerelease draft was created in this repository:
 - Tag: `xperslot-android-preview-2026.11.11`
 - Draft URL: [XperSlot Android Preview](https://github.com/wondxpt/XperSlot-Downloads/releases/tag/untagged-5a4b7739966b129f9bbf)
 
-**Customer is attached and GitHub reports its expected exact size and SHA-256 digest. Business is still uploading.** The draft is not a public download page and must remain unpublished until the Business asset is also fully uploaded and verified.
+**Customer is fully uploaded.** GitHub reports asset ID `734970862`, filename `XperSlot-Customer-2.1.1-code14.apk`, exact size `95,546,021` bytes, state `uploaded`, and digest `sha256:0b035aa389129cf10b7e69b82f5da615c332e7293c94ea7012778ece801f67d3`. **Business is still uploading** and has not yet been confirmed as a complete asset. The draft is not a public download page and must remain unpublished until the Business asset is also fully uploaded and verified.
 
 ## Signing continuity and installation safety
 
