@@ -63,6 +63,8 @@ Both candidate APKs passed Android APK Signature Scheme v2 verification. The rel
 5E40400F42768141989602625D157D91C22D0031253D4A766DF2264982874DA2
 ```
 
+Download and verify the [SHA-256 checksum file](SHA256SUMS.txt) after obtaining the APKs.
+
 ## Important installation and upgrade warning
 
 This is intended as the **first public distribution** of XperSlot Customer and XperSlot Business. No earlier public customer installations are being migrated. Some non-public developer test installations were signed with a different certificate:
