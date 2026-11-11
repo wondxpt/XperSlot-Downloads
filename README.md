@@ -46,7 +46,7 @@ The package IDs are retained technical identifiers. The built APKs use XperSlot-
 
 ## Release availability
 
-<badge>Preview validation</badge>
+![Release stage](https://img.shields.io/badge/Release-Preview%20validation-5A55E0?style=for-the-badge)
 
 **No public APK download is available yet.** A GitHub prerelease draft is being prepared, but it is not a public download until both APK assets finish uploading and GitHub reports them as complete. Do not treat a draft page or a listed version number as a downloadable release.
 
